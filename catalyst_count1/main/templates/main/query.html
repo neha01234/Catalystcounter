@@ -1,0 +1,73 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Query Builder{% endblock %}
+
+{% block content %}
+<h1>Query Builder</h1>
+<form method="post">
+    {% csrf_token %}
+    
+    <div>
+        Name:
+        <select  name = "name">
+            <option value="" disabled selected>Select Name</option>
+            <optgroup>
+                {% for value in dropdown.name %}
+                   <option value="{{value}}">{{value}}</option>
+                {% endfor %}
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <div>
+        Domain:
+        <select  name = "domain">
+            <option value="" disabled selected>Select Domain</option>
+            <optgroup label=" domain">
+                {% for value in dropdown.domain %}
+                   <option value="{{value}}">{{value}}</option>
+                {% endfor %}
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <div> 
+        Industry:
+        <select  name = "industry">
+            <option value="" disabled selected>Select Industry</option>
+            <optgroup label="Industry">
+                {% for value in dropdown.industry %}
+                   <option value="{{value}}">{{value}}</option>
+                {% endfor %}
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <div>
+        Year Founded:
+        <select  name = "name">
+            <option value="" disabled selected>Year Founded</option>
+            <optgroup label="year_founded">
+                {% for value in dropdown.year_founded %}
+                   <option value="{{value}}">{{value}}</option>
+                {% endfor %}
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <div>  
+        Country:
+        <select  name = "country">
+            <option value="" disabled selected>Select Country</option>
+            <optgroup label="country">
+                {% for value in dropdown.country %}
+                   <option value="{{value}}">{{value}}</option>
+                {% endfor %}
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

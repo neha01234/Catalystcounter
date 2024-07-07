@@ -1,0 +1,9 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Query Results{% endblock %}
+
+{% block content %}
+<h1>Query Results</h1>
+<p>Number of records: {{ count }}</p>
+<a href="{% url 'query' %}" class="btn btn-secondary">Back to Query</a>
+{% endblock %}

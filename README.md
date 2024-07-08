@@ -1,14 +1,14 @@
 # Catalystcounter
 ### This project implements a web application that allows users to upload large CSV files and filter the data, providing a count of matching records.
 
-# Features
+## Features
 User authentication and registration.
 Chunk-based file upload for large files (1GB+).
 Database storage of uploaded data using Django default sqlite.
 A user-friendly query builder for filtering data using various criteria.
 API endpoint to return the count of records matching the applied filter.
 
-# Technologies
+## Technologies
 **Django**: Framework for building the web application.
 
 **Bootstrap**: Framework for styling the user interface.
@@ -17,7 +17,7 @@ API endpoint to return the count of records matching the applied filter.
 
 **Django Rest Framework**: For creating the API endpoint.
 
-# Installation
+## Installation
 Install Python 3.6 or higher.
 
 Clone the repository: git clone <repository URL>
@@ -46,13 +46,13 @@ ALLOWED_HOSTS: A list of allowed hostnames.
 
 **Run the server**: python manage.py runserver
 
-# Usage
+## Usage
 Open the application in your web browser.
 Log in or register a new account.
 Upload a CSV file using the upload data page.
 Use the query builder to filter the data.
 View the count of matching records.
 
-# Contributing
+## Contributing
 Contributions are welcome! Please submit a pull request with your changes.
 

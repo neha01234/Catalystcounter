@@ -9,13 +9,13 @@ A user-friendly query builder for filtering data using various criteria.
 API endpoint to return the count of records matching the applied filter.
 
 # Technologies
-Django: Framework for building the web application.
+**Django**: Framework for building the web application.
 
-Bootstrap: Framework for styling the user interface.
+**Bootstrap**: Framework for styling the user interface.
 
-Django-all-auth: For user authentication and registration.
+**Django-all-auth**: For user authentication and registration.
 
-Django Rest Framework: For creating the API endpoint.
+**Django Rest Framework**: For creating the API endpoint.
 
 # Installation
 Install Python 3.6 or higher.
@@ -24,20 +24,27 @@ Clone the repository: git clone <repository URL>
 
 Navigate to the project directory: cd catalyst-count
 
-Install dependencies: 
+**Install dependencies:**
 pip install Django==3.2.12  
+
 pip install django-allauth==0.51.0  # for user authentication and registration
+
 pip install django-crispy-forms==1.14.0  # for form rendering (optional)
+
 pip install bootstrap4==1.1.2  # for Bootstrap 4 styling
+
 pip install djangorestframework==3.13.1  
 
-Create superuser to see database using command: python manage.py createsuperuser
+**Create superuser to see database using command**: python manage.py createsuperuser
+
 DEBUG: Set to True for development mode, False for production.
+
 ALLOWED_HOSTS: A list of allowed hostnames.
 
-Create the database: python manage.py makemigrations python manage.py migrate
 
-Run the server: python manage.py runserver
+**Create the database**: python manage.py makemigrations python manage.py migrate
+
+**Run the server**: python manage.py runserver
 
 # Usage
 Open the application in your web browser.

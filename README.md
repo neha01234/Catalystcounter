@@ -10,8 +10,11 @@ API endpoint to return the count of records matching the applied filter.
 
 # Technologies
 Django: Framework for building the web application.
+
 Bootstrap: Framework for styling the user interface.
+
 Django-all-auth: For user authentication and registration.
+
 Django Rest Framework: For creating the API endpoint.
 
 # Installation
